@@ -67,7 +67,7 @@ export default function Login({ status, canResetPassword }) {
                         value={data.email}
                         className="mt-1 block w-full"
                         autoComplete="username"
-                        isFocused={true}
+                        // isFocused={true}
                         onChange={ handleChange }
                         onBlur={ handleBlur }
                     />

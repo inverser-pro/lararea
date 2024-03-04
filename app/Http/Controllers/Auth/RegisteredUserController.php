@@ -50,7 +50,7 @@ class RegisteredUserController extends Controller
                     'regex:/[A-z]/', // Checking for capital and lowercase letters
                     'regex:/[0-9]/', // Checking for numbers
                     'regex:/[\\/!\';\[\]@`~#$%^&*(),.?":{}|<>_+=-]/', // Checking for special characters
-                    'not_regex:/[А-я\\s]/', // Checking for Russian capital and lowercase characters and spaces
+//                    'not_regex:/[А-я\\s]/', // Checking for Russian capital and lowercase characters and spaces
                 ],
             ]);
             if ($validator->fails()) {
