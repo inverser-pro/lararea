@@ -2,6 +2,12 @@ To start:
 
 `php artisan serve && yarn dev`
 
+Migrate the database in the standard way.
+Software used:
+
+- PHP 8.3.2
+- MariaDB connection id is 25 | Server version: 11.2.3-MariaDB Arch Linux
+- nginx version: nginx/1.25.4
 _______
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
