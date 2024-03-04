@@ -15,6 +15,7 @@ use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class RegisteredUserController extends Controller
 {
@@ -32,7 +33,7 @@ class RegisteredUserController extends Controller
      * @throws \Illuminate\Validation\ValidationException
      * @data from Front registration form //localhost/register
      *                                          >> $request->any_data
-     *                                              any_data = name || email || password || password_confirmation
+     *                                              any_data = name || email || password || password_confirmation || csrf
      */
     public function store(Request $request): RedirectResponse
     {
@@ -41,6 +42,7 @@ class RegisteredUserController extends Controller
             'email' => 'required|string|lowercase|email|max:255|unique:'.User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
+
         // Additional verification of the password for compliance with the necessary requirements of the technical specifications
         try {
             // Since checking for each category of characters is performed additionally on the Frontend, here I perform the check only nominally, in case of automatic or generated outside the browser requests

@@ -25,3 +25,17 @@ Route::prefix('auth')->middleware('api')->controller(\App\Http\Controllers\API\A
         Route::post('refresh','refresh');
     }
 );
+
+//Route::group([
+//
+//    'middleware' => 'api',
+//    'prefix' => 'auth'
+//
+//], function ($router) {
+//
+//    Route::post('login', 'AuthController@login');
+//    Route::post('logout', 'AuthController@logout');
+//    Route::post('refresh', 'AuthController@refresh');
+//    Route::post('user', 'AuthController@user');
+//
+//});

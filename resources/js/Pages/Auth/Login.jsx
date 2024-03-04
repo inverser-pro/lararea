@@ -48,8 +48,30 @@ export default function Login({ status, canResetPassword }) {
 
     const submit = e => {
         e.preventDefault();
-        post(route('login'));
+        // post(route('login'));
+        /*useEffect(*///(){
+            try {
+                fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain',
+                        'Content-Type': 'application/json'
+                    },
+                    mode: "same-origin",
+                    cache: "force-cache",
+                    credentials: "same-origin",
+                    body: JSON.stringify(data)
+                }).then(res => res.json())
+                    .then(res => {
+                        console.log(res)
+                    })
+                    .catch((e) => {console.log('ERROR_234cudf7...' + e)});
+            } catch (e) {
+                console.log('ERROR_234cudf7... ' + e);
+            }
+        //}/*)*/;
     };
+
     return (
         <GuestLayout>
             <Head title="Log in" />

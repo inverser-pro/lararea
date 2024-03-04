@@ -39,7 +39,6 @@ export default function Register() {
             }else{
                 setPasswordError({msg: '',secondVal:0});
             }
-            console.log(data)
             post(route('register'));
         },
         handleCheck = value => { // Checking the password value for compliance with the terms of reference (and a little more...)
