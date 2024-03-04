@@ -1,10 +1,13 @@
- # Excluding files and directories Laravel
-/vendor/
+
+# Ignore the vendor directory where Composer dependencies are installed
+/vendor
 /node_modules/
 /public/storage
 /public/hot
 /storage/*.key
 /.env
+.env.local
+.env.*.local
 
 # Excluding files created by IDEs and code editors
 /.idea
@@ -37,3 +40,34 @@ package-lock.json
 *.log
 *.bak
 *.swp
+*.sql
+*.sqlite
+
+# Ignore user specific files
+Homestead.yaml
+Homestead.json
+
+# Ignore the vendor directory where Composer dependencies are installed
+/vendor
+
+# Ignore the storage directory where framework generated files are stored
+/storage
+
+# Ignore logs and other generated files
+*.log
+npm-debug.log
+yarn-error.log
+
+# Ignore IDE specific files and directories
+/.idea
+/.vscode
+/.vs
+
+# Ignore sensitive files that might get uploaded to your server
+*.key
+*.pem
+
+# Ignore Mac-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
