@@ -1,0 +1,39 @@
+ # Excluding files and directories Laravel
+/vendor/
+/node_modules/
+/public/storage
+/public/hot
+/storage/*.key
+/.env
+
+# Excluding files created by IDEs and code editors
+/.idea
+/.vscode
+/.project
+/.classpath
+
+# Excluding Laravel and Composer generated files
+/.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+
+# Excluding npm files and Yarn
+/yarn-error.log
+.yarn/
+node_modules/
+yarn.lock
+package-lock.json
+
+# Excluding files created by React
+/build/
+/.eslintcache
+
+# Excluding files and directories for tests
+/coverage/
+/.nyc_output/
+
+# Excluding temporary files
+*.log
+*.bak
+*.swp
