@@ -6,7 +6,7 @@ Migrate the database in the standard way.
 Software used:
 
 - PHP 8.3.2
-- MariaDB connection id is 25 | Server version: 11.2.3-MariaDB Arch Linux
+- MariaDB | Server version: 11.2.3-MariaDB Arch Linux
 - nginx version: nginx/1.25.4
 _______
 
